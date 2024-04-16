@@ -25,6 +25,7 @@ struct ScheduleView: View {
                 .padding(.horizontal,16)
                 .accentColor(Color.pink01)
                 .clipped()
+                .padding(.top,20)
             
             scheduleView
             
@@ -40,7 +41,7 @@ struct ScheduleView: View {
                 .padding(.horizontal,16)
             })
         }
-//        .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
+        //        .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
         .padding([.top,.bottom,],16)
     }
     
@@ -48,6 +49,7 @@ struct ScheduleView: View {
         Text("Todo-ran")
             .font(.pretendardBold32)
             .padding(.horizontal,16)
+            .padding(.top,7)
     }
     
     private var scheduleView : some View {
@@ -59,7 +61,9 @@ struct ScheduleView: View {
             }
             .onDelete(perform: delete)
             .navigationBarBackButtonHidden(true)
+//            .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
         }
+//        .frame(height: 30*CGFloat(Int(schedules.count)))
         .listStyle(.inset)
     }
 }
@@ -70,6 +74,14 @@ extension ScheduleView{
             print(index)
             let schedule = schedules[index]
             modelContext.delete(schedule)
+            
+            
+            do {
+                try modelContext.save()
+            }
+            catch {
+                print("Error saving : \(error.localizedDescription)")
+            }
         }
     }
 }

@@ -23,16 +23,19 @@ struct ScheduleRowView: View {
             })
             .frame(width: 20,height: 20)
             .buttonStyle(.plain)
+            
             if schedule.isComplete {
                 Text(schedule.name)
                     .font(.pretendardRegular16)
                     .foregroundColor(.gray02)
             }
+            
             else{
                 TextField(schedule.name, text: $schedule.name)
                     .font(.pretendardRegular16)
             }
         }
+        .padding(3)
         .frame(height: 27)
     }
     var filledReminderLabel: some View {

@@ -15,13 +15,14 @@ struct ChartView: View {
         @State private var animatedCompletedRatio: Double = 0
         
         var body: some View {
+            let totalCount = Double(schedules.count)
             let completedRatio = Double(schedules.filter{$0.isComplete == true}.count)
             
             let chartData: [ChartData] = [
                 ChartData(isComplete: "완료", ratio: animatedCompletedRatio),
-                ChartData(isComplete: "미완료", ratio: Double(schedules.count) - animatedCompletedRatio)
+                ChartData(isComplete: "미완료", ratio: totalCount - animatedCompletedRatio)
             ]
-            let totalRatio : Double = completedRatio / Double(schedules.count) * 100
+            let totalRatio : Double = totalCount > 0 ? completedRatio / Double(schedules.count) * 100 : 0
         ZStack{
             Chart(chartData) { chartData in
                 SectorMark(

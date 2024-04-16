@@ -27,6 +27,7 @@ struct HomeView: View {
                 VStack(alignment:.leading){
                     Divider()
                     CalendarView(selectedDate : selectedDate, month: Date())
+                        .padding(.top,20)
                     
                     Divider()
                     scheduleView
@@ -42,6 +43,7 @@ struct HomeView: View {
             Text("Todo-ran")
                 .font(.pretendardBold32)
                 .padding(.bottom,2)
+                .padding(.top,7)
             Text("당신의 하루는 뿌듯한가요?")
                 .font(.pretendardSemiBold14)
         }
@@ -50,16 +52,30 @@ struct HomeView: View {
     private var scheduleView: some View {
         Section{
             Text("그때의 뿌듯함")
-                .font(.pretendardSemiBold14)
+                .font(.pretendardSemiBold18)
                 .padding(.top,10)
+                .padding(3)
             
-            ForEach(schedules.filter {
+            let filteredSchedules = schedules.filter {
                 Calendar.current.isDate($0.creationDate, inSameDayAs: selectedDate.date)
-            }) { item in
-                ScheduleRowView(schedule: item)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(.bottom,10)
-                    .overlay(BottomBorder().stroke(Color.gray01, lineWidth: 1))
+            }
+            
+            
+            if filteredSchedules.isEmpty {
+                Text("해당 일정이 없습니다.")
+                    .font(.pretendardRegular16)
+                    .foregroundColor(.gray02)
+                    .padding(.leading,3)
+                    
+            }
+            else{
+                ForEach(filteredSchedules)
+                { item in
+                    ScheduleRowView(schedule: item)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.bottom,10)
+                        .overlay(BottomBorder().stroke(Color.gray01, lineWidth: 1))
+                }
             }
         }
     }

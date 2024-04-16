@@ -20,12 +20,6 @@ final class Schedule: Identifiable {
         self.creationDate = creationDate
         self.isComplete = isComplete
     }
-    
-    func hasEvent(on date: Date, schedules : [Schedule]) -> Bool {
-        let startOfDay = Calendar.current.startOfDay(for: date)
-        
-        return true
-    }
 }
 
 
