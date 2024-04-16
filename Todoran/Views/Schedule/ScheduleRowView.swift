@@ -23,6 +23,8 @@ struct ScheduleRowView: View {
             })
             .frame(width: 20,height: 20)
             .buttonStyle(.plain)
+            .contentShape(Rectangle())
+            .background(Color.clear)
             
             if schedule.isComplete {
                 Text(schedule.name)

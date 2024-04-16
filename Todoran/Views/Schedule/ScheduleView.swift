@@ -58,8 +58,13 @@ struct ScheduleView: View {
                 Calendar.current.isDate($0.creationDate, inSameDayAs: selectedDate.date)
             }) { item in
                 ScheduleRowView(schedule: item)
+                    .swipeActions(content: {
+                        Button(role:.destructive, action: {modelContext.delete(item)}){
+                            Image(systemName: "trash")
+                        }
+                    })
             }
-            .onDelete(perform: delete)
+//            .onDelete(perform: delete)
             .navigationBarBackButtonHidden(true)
 //            .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
         }
@@ -68,23 +73,15 @@ struct ScheduleView: View {
     }
 }
 
-extension ScheduleView{
-    func delete(_ indexSets: IndexSet) {
-        for index in indexSets {
-            print(index)
-            let schedule = schedules[index]
-            modelContext.delete(schedule)
-            
-            
-            do {
-                try modelContext.save()
-            }
-            catch {
-                print("Error saving : \(error.localizedDescription)")
-            }
-        }
-    }
-}
+//extension ScheduleView{
+//    func delete(_ indexSets: IndexSet) {
+//        for index in indexSets {
+//            print(index)
+//            let schedule = schedules[index]
+//            modelContext.delete(schedule)
+//        }
+//    }
+//}
 
 #Preview {
     ScheduleView(selectedDate: SelectedDate.init())

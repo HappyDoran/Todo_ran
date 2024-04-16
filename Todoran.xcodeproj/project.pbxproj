@@ -21,15 +21,8 @@
 		4F8353652BC678FD00961BFC /* TodoranUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8353642BC678FD00961BFC /* TodoranUITests.swift */; };
 		4F8353672BC678FD00961BFC /* TodoranUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8353662BC678FD00961BFC /* TodoranUITestsLaunchTests.swift */; };
 		4F83537A2BC6796300961BFC /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8353792BC6796300961BFC /* ColorExtension.swift */; };
-		4F83537C2BC6798800961BFC /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F83537B2BC6798800961BFC /* Reminder.swift */; };
-		4F83537E2BC6799E00961BFC /* ReminderList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F83537D2BC6799E00961BFC /* ReminderList.swift */; };
 		4F8353802BC679F000961BFC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F83537F2BC679F000961BFC /* MainView.swift */; };
 		4F8353842BC67A1E00961BFC /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8353832BC67A1E00961BFC /* CalendarView.swift */; };
-		4F8353862BC67A5300961BFC /* ReminderListListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8353852BC67A5300961BFC /* ReminderListListRowView.swift */; };
-		4F8353882BC67A8000961BFC /* ListCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8353872BC67A8000961BFC /* ListCardView.swift */; };
-		4F83538A2BC67A9C00961BFC /* TodoListVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8353892BC67A9C00961BFC /* TodoListVIew.swift */; };
-		4F83538D2BC67ABF00961BFC /* ReminderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F83538C2BC67ABF00961BFC /* ReminderListView.swift */; };
-		4F83538F2BC67ADD00961BFC /* ReminderRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F83538E2BC67ADD00961BFC /* ReminderRowView.swift */; };
 		4F8353942BC6B61400961BFC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8353932BC6B61400961BFC /* HomeView.swift */; };
 		4F8353982BC7713200961BFC /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8353972BC7713200961BFC /* FontManager.swift */; };
 		4F8353AB2BC7728100961BFC /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F8353A22BC7728100961BFC /* Pretendard-Regular.otf */; };
@@ -98,15 +91,8 @@
 		4F8353642BC678FD00961BFC /* TodoranUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoranUITests.swift; sourceTree = "<group>"; };
 		4F8353662BC678FD00961BFC /* TodoranUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoranUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4F8353792BC6796300961BFC /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
-		4F83537B2BC6798800961BFC /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
-		4F83537D2BC6799E00961BFC /* ReminderList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderList.swift; sourceTree = "<group>"; };
 		4F83537F2BC679F000961BFC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		4F8353832BC67A1E00961BFC /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
-		4F8353852BC67A5300961BFC /* ReminderListListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListListRowView.swift; sourceTree = "<group>"; };
-		4F8353872BC67A8000961BFC /* ListCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCardView.swift; sourceTree = "<group>"; };
-		4F8353892BC67A9C00961BFC /* TodoListVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListVIew.swift; sourceTree = "<group>"; };
-		4F83538C2BC67ABF00961BFC /* ReminderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListView.swift; sourceTree = "<group>"; };
-		4F83538E2BC67ADD00961BFC /* ReminderRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderRowView.swift; sourceTree = "<group>"; };
 		4F8353932BC6B61400961BFC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		4F8353972BC7713200961BFC /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
 		4F8353A22BC7728100961BFC /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
@@ -247,8 +233,6 @@
 		4F8353742BC6791200961BFC /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				4F83537B2BC6798800961BFC /* Reminder.swift */,
-				4F83537D2BC6799E00961BFC /* ReminderList.swift */,
 				4F8353972BC7713200961BFC /* FontManager.swift */,
 				4F0E15D42BCAA89700E2656D /* ScheduleData.swift */,
 				4F0E15D82BCACE1200E2656D /* SampleDeck.swift */,
@@ -263,7 +247,6 @@
 				4F0E15D12BC8315800E2656D /* Flag */,
 				4F0E15CE2BC8032400E2656D /* Schedule */,
 				4F8353922BC6B5F900961BFC /* Home */,
-				4F8353822BC67A0B00961BFC /* TodoList */,
 				4F8353812BC67A0100961BFC /* Calendar */,
 				4F83537F2BC679F000961BFC /* MainView.swift */,
 			);
@@ -308,26 +291,6 @@
 				4F8353832BC67A1E00961BFC /* CalendarView.swift */,
 			);
 			path = Calendar;
-			sourceTree = "<group>";
-		};
-		4F8353822BC67A0B00961BFC /* TodoList */ = {
-			isa = PBXGroup;
-			children = (
-				4F83538B2BC67AAC00961BFC /* ReminderList */,
-				4F8353852BC67A5300961BFC /* ReminderListListRowView.swift */,
-				4F8353872BC67A8000961BFC /* ListCardView.swift */,
-				4F8353892BC67A9C00961BFC /* TodoListVIew.swift */,
-			);
-			path = TodoList;
-			sourceTree = "<group>";
-		};
-		4F83538B2BC67AAC00961BFC /* ReminderList */ = {
-			isa = PBXGroup;
-			children = (
-				4F83538C2BC67ABF00961BFC /* ReminderListView.swift */,
-				4F83538E2BC67ADD00961BFC /* ReminderRowView.swift */,
-			);
-			path = ReminderList;
 			sourceTree = "<group>";
 		};
 		4F8353922BC6B5F900961BFC /* Home */ = {
@@ -496,27 +459,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F83537A2BC6796300961BFC /* ColorExtension.swift in Sources */,
-				4F83538F2BC67ADD00961BFC /* ReminderRowView.swift in Sources */,
 				4F8353942BC6B61400961BFC /* HomeView.swift in Sources */,
-				4F83538D2BC67ABF00961BFC /* ReminderListView.swift in Sources */,
 				4FEFAADD2BCCC2AE00B1A91C /* ChartData.swift in Sources */,
 				4F0E15DF2BCBBC9B00E2656D /* ScheduleRowView.swift in Sources */,
 				4F0E15D32BC8316500E2656D /* FlagView.swift in Sources */,
 				4FEFAB0F2BCD4ED400B1A91C /* ChartView.swift in Sources */,
-				4F8353862BC67A5300961BFC /* ReminderListListRowView.swift in Sources */,
 				4F0E15D92BCACE1200E2656D /* SampleDeck.swift in Sources */,
 				4F0E15D52BCAA89800E2656D /* ScheduleData.swift in Sources */,
 				4F8353842BC67A1E00961BFC /* CalendarView.swift in Sources */,
 				4F8353802BC679F000961BFC /* MainView.swift in Sources */,
 				4F0E15D02BC8034200E2656D /* ScheduleView.swift in Sources */,
-				4F8353882BC67A8000961BFC /* ListCardView.swift in Sources */,
 				4F83534C2BC678FC00961BFC /* ContentView.swift in Sources */,
 				4F8353982BC7713200961BFC /* FontManager.swift in Sources */,
 				4F0E15DD2BCAD09F00E2656D /* PreviewSampleData.swift in Sources */,
-				4F83538A2BC67A9C00961BFC /* TodoListVIew.swift in Sources */,
 				4F83534A2BC678FC00961BFC /* TodoranApp.swift in Sources */,
-				4F83537E2BC6799E00961BFC /* ReminderList.swift in Sources */,
-				4F83537C2BC6798800961BFC /* Reminder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
