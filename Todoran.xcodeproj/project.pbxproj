@@ -1,0 +1,853 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F0E15D02BC8034200E2656D /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0E15CF2BC8034200E2656D /* ScheduleView.swift */; };
+		4F0E15D32BC8316500E2656D /* FlagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0E15D22BC8316500E2656D /* FlagView.swift */; };
+		4F0E15D52BCAA89800E2656D /* ScheduleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0E15D42BCAA89700E2656D /* ScheduleData.swift */; };
+		4F0E15D92BCACE1200E2656D /* SampleDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0E15D82BCACE1200E2656D /* SampleDeck.swift */; };
+		4F0E15DD2BCAD09F00E2656D /* PreviewSampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0E15DB2BCAD06D00E2656D /* PreviewSampleData.swift */; };
+		4F0E15DF2BCBBC9B00E2656D /* ScheduleRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0E15DE2BCBBC9B00E2656D /* ScheduleRowView.swift */; };
+		4F83534A2BC678FC00961BFC /* TodoranApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8353492BC678FC00961BFC /* TodoranApp.swift */; };
+		4F83534C2BC678FC00961BFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F83534B2BC678FC00961BFC /* ContentView.swift */; };
+		4F83534E2BC678FC00961BFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F83534D2BC678FC00961BFC /* Assets.xcassets */; };
+		4F8353512BC678FC00961BFC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F8353502BC678FC00961BFC /* Preview Assets.xcassets */; };
+		4F83535B2BC678FD00961BFC /* TodoranTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F83535A2BC678FD00961BFC /* TodoranTests.swift */; };
+		4F8353652BC678FD00961BFC /* TodoranUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8353642BC678FD00961BFC /* TodoranUITests.swift */; };
+		4F8353672BC678FD00961BFC /* TodoranUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8353662BC678FD00961BFC /* TodoranUITestsLaunchTests.swift */; };
+		4F83537A2BC6796300961BFC /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8353792BC6796300961BFC /* ColorExtension.swift */; };
+		4F83537C2BC6798800961BFC /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F83537B2BC6798800961BFC /* Reminder.swift */; };
+		4F83537E2BC6799E00961BFC /* ReminderList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F83537D2BC6799E00961BFC /* ReminderList.swift */; };
+		4F8353802BC679F000961BFC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F83537F2BC679F000961BFC /* MainView.swift */; };
+		4F8353842BC67A1E00961BFC /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8353832BC67A1E00961BFC /* CalendarView.swift */; };
+		4F8353862BC67A5300961BFC /* ReminderListListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8353852BC67A5300961BFC /* ReminderListListRowView.swift */; };
+		4F8353882BC67A8000961BFC /* ListCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8353872BC67A8000961BFC /* ListCardView.swift */; };
+		4F83538A2BC67A9C00961BFC /* TodoListVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8353892BC67A9C00961BFC /* TodoListVIew.swift */; };
+		4F83538D2BC67ABF00961BFC /* ReminderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F83538C2BC67ABF00961BFC /* ReminderListView.swift */; };
+		4F83538F2BC67ADD00961BFC /* ReminderRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F83538E2BC67ADD00961BFC /* ReminderRowView.swift */; };
+		4F8353942BC6B61400961BFC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8353932BC6B61400961BFC /* HomeView.swift */; };
+		4F8353982BC7713200961BFC /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8353972BC7713200961BFC /* FontManager.swift */; };
+		4F8353AB2BC7728100961BFC /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F8353A22BC7728100961BFC /* Pretendard-Regular.otf */; };
+		4F8353AC2BC7728100961BFC /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F8353A22BC7728100961BFC /* Pretendard-Regular.otf */; };
+		4F8353AD2BC7728100961BFC /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F8353A22BC7728100961BFC /* Pretendard-Regular.otf */; };
+		4F8353AE2BC7728100961BFC /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F8353A32BC7728100961BFC /* Pretendard-Black.otf */; };
+		4F8353AF2BC7728100961BFC /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F8353A32BC7728100961BFC /* Pretendard-Black.otf */; };
+		4F8353B02BC7728100961BFC /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F8353A32BC7728100961BFC /* Pretendard-Black.otf */; };
+		4F8353B12BC7728100961BFC /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F8353A42BC7728100961BFC /* Pretendard-SemiBold.otf */; };
+		4F8353B22BC7728100961BFC /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F8353A42BC7728100961BFC /* Pretendard-SemiBold.otf */; };
+		4F8353B32BC7728100961BFC /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F8353A42BC7728100961BFC /* Pretendard-SemiBold.otf */; };
+		4F8353B42BC7728100961BFC /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F8353A52BC7728100961BFC /* Pretendard-Thin.otf */; };
+		4F8353B52BC7728100961BFC /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F8353A52BC7728100961BFC /* Pretendard-Thin.otf */; };
+		4F8353B62BC7728100961BFC /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F8353A52BC7728100961BFC /* Pretendard-Thin.otf */; };
+		4F8353B72BC7728100961BFC /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F8353A62BC7728100961BFC /* Pretendard-ExtraLight.otf */; };
+		4F8353B82BC7728100961BFC /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F8353A62BC7728100961BFC /* Pretendard-ExtraLight.otf */; };
+		4F8353B92BC7728100961BFC /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F8353A62BC7728100961BFC /* Pretendard-ExtraLight.otf */; };
+		4F8353BA2BC7728100961BFC /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F8353A72BC7728100961BFC /* Pretendard-ExtraBold.otf */; };
+		4F8353BB2BC7728100961BFC /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F8353A72BC7728100961BFC /* Pretendard-ExtraBold.otf */; };
+		4F8353BC2BC7728100961BFC /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F8353A72BC7728100961BFC /* Pretendard-ExtraBold.otf */; };
+		4F8353BD2BC7728100961BFC /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F8353A82BC7728100961BFC /* Pretendard-Medium.otf */; };
+		4F8353BE2BC7728100961BFC /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F8353A82BC7728100961BFC /* Pretendard-Medium.otf */; };
+		4F8353BF2BC7728100961BFC /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F8353A82BC7728100961BFC /* Pretendard-Medium.otf */; };
+		4F8353C02BC7728100961BFC /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F8353A92BC7728100961BFC /* Pretendard-Bold.otf */; };
+		4F8353C12BC7728100961BFC /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F8353A92BC7728100961BFC /* Pretendard-Bold.otf */; };
+		4F8353C22BC7728100961BFC /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F8353A92BC7728100961BFC /* Pretendard-Bold.otf */; };
+		4F8353C32BC7728100961BFC /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F8353AA2BC7728100961BFC /* Pretendard-Light.otf */; };
+		4F8353C42BC7728100961BFC /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F8353AA2BC7728100961BFC /* Pretendard-Light.otf */; };
+		4F8353C52BC7728100961BFC /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F8353AA2BC7728100961BFC /* Pretendard-Light.otf */; };
+		4FEFAADD2BCCC2AE00B1A91C /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEFAADC2BCCC2AE00B1A91C /* ChartData.swift */; };
+		4FEFAB0F2BCD4ED400B1A91C /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEFAB0E2BCD4ED400B1A91C /* ChartView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4F8353572BC678FD00961BFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F83533E2BC678FC00961BFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F8353452BC678FC00961BFC;
+			remoteInfo = Todoran;
+		};
+		4F8353612BC678FD00961BFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F83533E2BC678FC00961BFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F8353452BC678FC00961BFC;
+			remoteInfo = Todoran;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4F0E15CF2BC8034200E2656D /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		4F0E15D22BC8316500E2656D /* FlagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagView.swift; sourceTree = "<group>"; };
+		4F0E15D42BCAA89700E2656D /* ScheduleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleData.swift; sourceTree = "<group>"; };
+		4F0E15D82BCACE1200E2656D /* SampleDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleDeck.swift; sourceTree = "<group>"; };
+		4F0E15DB2BCAD06D00E2656D /* PreviewSampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewSampleData.swift; sourceTree = "<group>"; };
+		4F0E15DE2BCBBC9B00E2656D /* ScheduleRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleRowView.swift; sourceTree = "<group>"; };
+		4F8353462BC678FC00961BFC /* Todoran.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todoran.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F8353492BC678FC00961BFC /* TodoranApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoranApp.swift; sourceTree = "<group>"; };
+		4F83534B2BC678FC00961BFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4F83534D2BC678FC00961BFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4F8353502BC678FC00961BFC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4F8353562BC678FD00961BFC /* TodoranTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoranTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F83535A2BC678FD00961BFC /* TodoranTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoranTests.swift; sourceTree = "<group>"; };
+		4F8353602BC678FD00961BFC /* TodoranUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoranUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F8353642BC678FD00961BFC /* TodoranUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoranUITests.swift; sourceTree = "<group>"; };
+		4F8353662BC678FD00961BFC /* TodoranUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoranUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4F8353792BC6796300961BFC /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		4F83537B2BC6798800961BFC /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		4F83537D2BC6799E00961BFC /* ReminderList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderList.swift; sourceTree = "<group>"; };
+		4F83537F2BC679F000961BFC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		4F8353832BC67A1E00961BFC /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		4F8353852BC67A5300961BFC /* ReminderListListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListListRowView.swift; sourceTree = "<group>"; };
+		4F8353872BC67A8000961BFC /* ListCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCardView.swift; sourceTree = "<group>"; };
+		4F8353892BC67A9C00961BFC /* TodoListVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListVIew.swift; sourceTree = "<group>"; };
+		4F83538C2BC67ABF00961BFC /* ReminderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListView.swift; sourceTree = "<group>"; };
+		4F83538E2BC67ADD00961BFC /* ReminderRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderRowView.swift; sourceTree = "<group>"; };
+		4F8353932BC6B61400961BFC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4F8353972BC7713200961BFC /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
+		4F8353A22BC7728100961BFC /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		4F8353A32BC7728100961BFC /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
+		4F8353A42BC7728100961BFC /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		4F8353A52BC7728100961BFC /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
+		4F8353A62BC7728100961BFC /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
+		4F8353A72BC7728100961BFC /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
+		4F8353A82BC7728100961BFC /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
+		4F8353A92BC7728100961BFC /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		4F8353AA2BC7728100961BFC /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.otf"; sourceTree = "<group>"; };
+		4F8353C62BC772CE00961BFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4FEFAADC2BCCC2AE00B1A91C /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
+		4FEFAB0E2BCD4ED400B1A91C /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F8353432BC678FC00961BFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F8353532BC678FD00961BFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F83535D2BC678FD00961BFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F0E15CE2BC8032400E2656D /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				4F0E15CF2BC8034200E2656D /* ScheduleView.swift */,
+				4F0E15DE2BCBBC9B00E2656D /* ScheduleRowView.swift */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		4F0E15D12BC8315800E2656D /* Flag */ = {
+			isa = PBXGroup;
+			children = (
+				4F0E15D22BC8316500E2656D /* FlagView.swift */,
+				4FEFAB0E2BCD4ED400B1A91C /* ChartView.swift */,
+			);
+			path = Flag;
+			sourceTree = "<group>";
+		};
+		4F0E15DA2BCAD05500E2656D /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				4F0E15DB2BCAD06D00E2656D /* PreviewSampleData.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		4F83533D2BC678FC00961BFC = {
+			isa = PBXGroup;
+			children = (
+				4F8353482BC678FC00961BFC /* Todoran */,
+				4F8353592BC678FD00961BFC /* TodoranTests */,
+				4F8353632BC678FD00961BFC /* TodoranUITests */,
+				4F8353472BC678FC00961BFC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4F8353472BC678FC00961BFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F8353462BC678FC00961BFC /* Todoran.app */,
+				4F8353562BC678FD00961BFC /* TodoranTests.xctest */,
+				4F8353602BC678FD00961BFC /* TodoranUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F8353482BC678FC00961BFC /* Todoran */ = {
+			isa = PBXGroup;
+			children = (
+				4F0E15DA2BCAD05500E2656D /* Support */,
+				4F8353C62BC772CE00961BFC /* Info.plist */,
+				4F8353752BC6792000961BFC /* Views */,
+				4F8353742BC6791200961BFC /* Models */,
+				4F8353732BC6790800961BFC /* Resources */,
+				4F8353492BC678FC00961BFC /* TodoranApp.swift */,
+				4F83534B2BC678FC00961BFC /* ContentView.swift */,
+				4F83534F2BC678FC00961BFC /* Preview Content */,
+			);
+			path = Todoran;
+			sourceTree = "<group>";
+		};
+		4F83534F2BC678FC00961BFC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4F8353502BC678FC00961BFC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4F8353592BC678FD00961BFC /* TodoranTests */ = {
+			isa = PBXGroup;
+			children = (
+				4F83535A2BC678FD00961BFC /* TodoranTests.swift */,
+			);
+			path = TodoranTests;
+			sourceTree = "<group>";
+		};
+		4F8353632BC678FD00961BFC /* TodoranUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4F8353642BC678FD00961BFC /* TodoranUITests.swift */,
+				4F8353662BC678FD00961BFC /* TodoranUITestsLaunchTests.swift */,
+			);
+			path = TodoranUITests;
+			sourceTree = "<group>";
+		};
+		4F8353732BC6790800961BFC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4F8353782BC6793B00961BFC /* Assets */,
+				4F8353772BC6793300961BFC /* Extensions */,
+				4F8353762BC6792B00961BFC /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4F8353742BC6791200961BFC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4F83537B2BC6798800961BFC /* Reminder.swift */,
+				4F83537D2BC6799E00961BFC /* ReminderList.swift */,
+				4F8353972BC7713200961BFC /* FontManager.swift */,
+				4F0E15D42BCAA89700E2656D /* ScheduleData.swift */,
+				4F0E15D82BCACE1200E2656D /* SampleDeck.swift */,
+				4FEFAADC2BCCC2AE00B1A91C /* ChartData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4F8353752BC6792000961BFC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4F0E15D12BC8315800E2656D /* Flag */,
+				4F0E15CE2BC8032400E2656D /* Schedule */,
+				4F8353922BC6B5F900961BFC /* Home */,
+				4F8353822BC67A0B00961BFC /* TodoList */,
+				4F8353812BC67A0100961BFC /* Calendar */,
+				4F83537F2BC679F000961BFC /* MainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4F8353762BC6792B00961BFC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4F8353A32BC7728100961BFC /* Pretendard-Black.otf */,
+				4F8353A92BC7728100961BFC /* Pretendard-Bold.otf */,
+				4F8353A72BC7728100961BFC /* Pretendard-ExtraBold.otf */,
+				4F8353A62BC7728100961BFC /* Pretendard-ExtraLight.otf */,
+				4F8353AA2BC7728100961BFC /* Pretendard-Light.otf */,
+				4F8353A82BC7728100961BFC /* Pretendard-Medium.otf */,
+				4F8353A22BC7728100961BFC /* Pretendard-Regular.otf */,
+				4F8353A42BC7728100961BFC /* Pretendard-SemiBold.otf */,
+				4F8353A52BC7728100961BFC /* Pretendard-Thin.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		4F8353772BC6793300961BFC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4F8353792BC6796300961BFC /* ColorExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4F8353782BC6793B00961BFC /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				4F83534D2BC678FC00961BFC /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		4F8353812BC67A0100961BFC /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				4F8353832BC67A1E00961BFC /* CalendarView.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		4F8353822BC67A0B00961BFC /* TodoList */ = {
+			isa = PBXGroup;
+			children = (
+				4F83538B2BC67AAC00961BFC /* ReminderList */,
+				4F8353852BC67A5300961BFC /* ReminderListListRowView.swift */,
+				4F8353872BC67A8000961BFC /* ListCardView.swift */,
+				4F8353892BC67A9C00961BFC /* TodoListVIew.swift */,
+			);
+			path = TodoList;
+			sourceTree = "<group>";
+		};
+		4F83538B2BC67AAC00961BFC /* ReminderList */ = {
+			isa = PBXGroup;
+			children = (
+				4F83538C2BC67ABF00961BFC /* ReminderListView.swift */,
+				4F83538E2BC67ADD00961BFC /* ReminderRowView.swift */,
+			);
+			path = ReminderList;
+			sourceTree = "<group>";
+		};
+		4F8353922BC6B5F900961BFC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4F8353932BC6B61400961BFC /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F8353452BC678FC00961BFC /* Todoran */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F83536A2BC678FD00961BFC /* Build configuration list for PBXNativeTarget "Todoran" */;
+			buildPhases = (
+				4F8353422BC678FC00961BFC /* Sources */,
+				4F8353432BC678FC00961BFC /* Frameworks */,
+				4F8353442BC678FC00961BFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Todoran;
+			productName = Todoran;
+			productReference = 4F8353462BC678FC00961BFC /* Todoran.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4F8353552BC678FD00961BFC /* TodoranTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F83536D2BC678FD00961BFC /* Build configuration list for PBXNativeTarget "TodoranTests" */;
+			buildPhases = (
+				4F8353522BC678FD00961BFC /* Sources */,
+				4F8353532BC678FD00961BFC /* Frameworks */,
+				4F8353542BC678FD00961BFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F8353582BC678FD00961BFC /* PBXTargetDependency */,
+			);
+			name = TodoranTests;
+			productName = TodoranTests;
+			productReference = 4F8353562BC678FD00961BFC /* TodoranTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4F83535F2BC678FD00961BFC /* TodoranUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F8353702BC678FD00961BFC /* Build configuration list for PBXNativeTarget "TodoranUITests" */;
+			buildPhases = (
+				4F83535C2BC678FD00961BFC /* Sources */,
+				4F83535D2BC678FD00961BFC /* Frameworks */,
+				4F83535E2BC678FD00961BFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F8353622BC678FD00961BFC /* PBXTargetDependency */,
+			);
+			name = TodoranUITests;
+			productName = TodoranUITests;
+			productReference = 4F8353602BC678FD00961BFC /* TodoranUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F83533E2BC678FC00961BFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					4F8353452BC678FC00961BFC = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					4F8353552BC678FD00961BFC = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 4F8353452BC678FC00961BFC;
+					};
+					4F83535F2BC678FD00961BFC = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 4F8353452BC678FC00961BFC;
+					};
+				};
+			};
+			buildConfigurationList = 4F8353412BC678FC00961BFC /* Build configuration list for PBXProject "Todoran" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4F83533D2BC678FC00961BFC;
+			productRefGroup = 4F8353472BC678FC00961BFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F8353452BC678FC00961BFC /* Todoran */,
+				4F8353552BC678FD00961BFC /* TodoranTests */,
+				4F83535F2BC678FD00961BFC /* TodoranUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F8353442BC678FC00961BFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F8353B72BC7728100961BFC /* Pretendard-ExtraLight.otf in Resources */,
+				4F8353C02BC7728100961BFC /* Pretendard-Bold.otf in Resources */,
+				4F8353512BC678FC00961BFC /* Preview Assets.xcassets in Resources */,
+				4F8353BA2BC7728100961BFC /* Pretendard-ExtraBold.otf in Resources */,
+				4F8353AB2BC7728100961BFC /* Pretendard-Regular.otf in Resources */,
+				4F8353C32BC7728100961BFC /* Pretendard-Light.otf in Resources */,
+				4F8353B12BC7728100961BFC /* Pretendard-SemiBold.otf in Resources */,
+				4F8353B42BC7728100961BFC /* Pretendard-Thin.otf in Resources */,
+				4F8353AE2BC7728100961BFC /* Pretendard-Black.otf in Resources */,
+				4F83534E2BC678FC00961BFC /* Assets.xcassets in Resources */,
+				4F8353BD2BC7728100961BFC /* Pretendard-Medium.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F8353542BC678FD00961BFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F8353BE2BC7728100961BFC /* Pretendard-Medium.otf in Resources */,
+				4F8353C12BC7728100961BFC /* Pretendard-Bold.otf in Resources */,
+				4F8353B22BC7728100961BFC /* Pretendard-SemiBold.otf in Resources */,
+				4F8353AF2BC7728100961BFC /* Pretendard-Black.otf in Resources */,
+				4F8353BB2BC7728100961BFC /* Pretendard-ExtraBold.otf in Resources */,
+				4F8353B82BC7728100961BFC /* Pretendard-ExtraLight.otf in Resources */,
+				4F8353AC2BC7728100961BFC /* Pretendard-Regular.otf in Resources */,
+				4F8353B52BC7728100961BFC /* Pretendard-Thin.otf in Resources */,
+				4F8353C42BC7728100961BFC /* Pretendard-Light.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F83535E2BC678FD00961BFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F8353BF2BC7728100961BFC /* Pretendard-Medium.otf in Resources */,
+				4F8353C22BC7728100961BFC /* Pretendard-Bold.otf in Resources */,
+				4F8353B32BC7728100961BFC /* Pretendard-SemiBold.otf in Resources */,
+				4F8353B02BC7728100961BFC /* Pretendard-Black.otf in Resources */,
+				4F8353BC2BC7728100961BFC /* Pretendard-ExtraBold.otf in Resources */,
+				4F8353B92BC7728100961BFC /* Pretendard-ExtraLight.otf in Resources */,
+				4F8353AD2BC7728100961BFC /* Pretendard-Regular.otf in Resources */,
+				4F8353B62BC7728100961BFC /* Pretendard-Thin.otf in Resources */,
+				4F8353C52BC7728100961BFC /* Pretendard-Light.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F8353422BC678FC00961BFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F83537A2BC6796300961BFC /* ColorExtension.swift in Sources */,
+				4F83538F2BC67ADD00961BFC /* ReminderRowView.swift in Sources */,
+				4F8353942BC6B61400961BFC /* HomeView.swift in Sources */,
+				4F83538D2BC67ABF00961BFC /* ReminderListView.swift in Sources */,
+				4FEFAADD2BCCC2AE00B1A91C /* ChartData.swift in Sources */,
+				4F0E15DF2BCBBC9B00E2656D /* ScheduleRowView.swift in Sources */,
+				4F0E15D32BC8316500E2656D /* FlagView.swift in Sources */,
+				4FEFAB0F2BCD4ED400B1A91C /* ChartView.swift in Sources */,
+				4F8353862BC67A5300961BFC /* ReminderListListRowView.swift in Sources */,
+				4F0E15D92BCACE1200E2656D /* SampleDeck.swift in Sources */,
+				4F0E15D52BCAA89800E2656D /* ScheduleData.swift in Sources */,
+				4F8353842BC67A1E00961BFC /* CalendarView.swift in Sources */,
+				4F8353802BC679F000961BFC /* MainView.swift in Sources */,
+				4F0E15D02BC8034200E2656D /* ScheduleView.swift in Sources */,
+				4F8353882BC67A8000961BFC /* ListCardView.swift in Sources */,
+				4F83534C2BC678FC00961BFC /* ContentView.swift in Sources */,
+				4F8353982BC7713200961BFC /* FontManager.swift in Sources */,
+				4F0E15DD2BCAD09F00E2656D /* PreviewSampleData.swift in Sources */,
+				4F83538A2BC67A9C00961BFC /* TodoListVIew.swift in Sources */,
+				4F83534A2BC678FC00961BFC /* TodoranApp.swift in Sources */,
+				4F83537E2BC6799E00961BFC /* ReminderList.swift in Sources */,
+				4F83537C2BC6798800961BFC /* Reminder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F8353522BC678FD00961BFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F83535B2BC678FD00961BFC /* TodoranTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F83535C2BC678FD00961BFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F8353672BC678FD00961BFC /* TodoranUITestsLaunchTests.swift in Sources */,
+				4F8353652BC678FD00961BFC /* TodoranUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4F8353582BC678FD00961BFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F8353452BC678FC00961BFC /* Todoran */;
+			targetProxy = 4F8353572BC678FD00961BFC /* PBXContainerItemProxy */;
+		};
+		4F8353622BC678FD00961BFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F8353452BC678FC00961BFC /* Todoran */;
+			targetProxy = 4F8353612BC678FD00961BFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4F8353682BC678FD00961BFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4F8353692BC678FD00961BFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4F83536B2BC678FD00961BFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Todoran/Preview Content\"";
+				DEVELOPMENT_TEAM = U6CCD5BT22;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Todoran/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Seodongwon.Todoran;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4F83536C2BC678FD00961BFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Todoran/Preview Content\"";
+				DEVELOPMENT_TEAM = U6CCD5BT22;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Todoran/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Seodongwon.Todoran;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4F83536E2BC678FD00961BFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U6CCD5BT22;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Seodongwon.TodoranTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Todoran.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Todoran";
+			};
+			name = Debug;
+		};
+		4F83536F2BC678FD00961BFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U6CCD5BT22;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Seodongwon.TodoranTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Todoran.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Todoran";
+			};
+			name = Release;
+		};
+		4F8353712BC678FD00961BFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U6CCD5BT22;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Seodongwon.TodoranUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Todoran;
+			};
+			name = Debug;
+		};
+		4F8353722BC678FD00961BFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U6CCD5BT22;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Seodongwon.TodoranUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Todoran;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F8353412BC678FC00961BFC /* Build configuration list for PBXProject "Todoran" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F8353682BC678FD00961BFC /* Debug */,
+				4F8353692BC678FD00961BFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F83536A2BC678FD00961BFC /* Build configuration list for PBXNativeTarget "Todoran" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F83536B2BC678FD00961BFC /* Debug */,
+				4F83536C2BC678FD00961BFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F83536D2BC678FD00961BFC /* Build configuration list for PBXNativeTarget "TodoranTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F83536E2BC678FD00961BFC /* Debug */,
+				4F83536F2BC678FD00961BFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F8353702BC678FD00961BFC /* Build configuration list for PBXNativeTarget "TodoranUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F8353712BC678FD00961BFC /* Debug */,
+				4F8353722BC678FD00961BFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4F83533E2BC678FC00961BFC /* Project object */;
+}
