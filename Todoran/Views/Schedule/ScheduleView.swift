@@ -66,9 +66,7 @@ struct ScheduleView: View {
             }
 //            .onDelete(perform: delete)
             .navigationBarBackButtonHidden(true)
-//            .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
         }
-//        .frame(height: 30*CGFloat(Int(schedules.count)))
         .listStyle(.inset)
     }
 }
@@ -76,7 +74,7 @@ struct ScheduleView: View {
 //extension ScheduleView{
 //    func delete(_ indexSets: IndexSet) {
 //        for index in indexSets {
-//            print(index)
+//            print(schedules[index].name)
 //            let schedule = schedules[index]
 //            modelContext.delete(schedule)
 //        }

@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftData
 
 struct HomeView: View {
-    //    @Environment(\.colorScheme) var colorScheme
+    @Environment(\.colorScheme) var colorScheme
     @Query private var schedules : [Schedule]
     @Bindable var selectedDate: SelectedDate
     
@@ -74,7 +74,8 @@ struct HomeView: View {
                     ScheduleRowView(schedule: item)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.bottom,10)
-                        .overlay(BottomBorder().stroke(Color.gray01, lineWidth: 1))
+//                    Divider()
+                        .overlay(BottomBorder().stroke(colorScheme == .dark ? Color.dividerColor : Color.gray01, lineWidth: 1))
                 }
             }
         }
@@ -97,5 +98,6 @@ struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView( selectedDate: SelectedDate())
             .modelContainer(previewContainer)
+//            .preferredColorScheme(.dark) //프리뷰 다크모드
     }
 }

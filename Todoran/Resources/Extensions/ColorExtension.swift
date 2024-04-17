@@ -27,10 +27,14 @@ extension Color {
     static let gray02 = Color(hex:"C7C7CC")
     static let gray03 = Color(hex:"8E8E93")
     
+    static let dividerColor = Color(hex:"0C0C0D")
     
     static let selectDate = Color(hex:"FF89A3")
     static let todayDate = Color(hex:"BCC9E2")
     static let scheduleDot = Color(hex:"FF446F")
+
+    
+    
 }
 
 extension Color {

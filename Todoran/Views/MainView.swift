@@ -56,4 +56,5 @@ struct MainView: View {
 #Preview {
     MainView(selectedDate: SelectedDate())
         .modelContainer(previewContainer)
+        .preferredColorScheme(.dark) //프리뷰 다크모드
 }
