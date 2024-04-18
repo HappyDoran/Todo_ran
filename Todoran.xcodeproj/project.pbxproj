@@ -73,6 +73,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4FEFAB642BD0A59100B1A91C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		4F0E15CF2BC8034200E2656D /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
 		4F0E15D22BC8316500E2656D /* FlagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagView.swift; sourceTree = "<group>"; };
@@ -107,6 +120,8 @@
 		4F8353C62BC772CE00961BFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4FEFAADC2BCCC2AE00B1A91C /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
 		4FEFAB0E2BCD4ED400B1A91C /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		4FEFAB512BD0A58F00B1A91C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		4FEFAB532BD0A58F00B1A91C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +181,7 @@
 				4F8353482BC678FC00961BFC /* Todoran */,
 				4F8353592BC678FD00961BFC /* TodoranTests */,
 				4F8353632BC678FD00961BFC /* TodoranUITests */,
+				4FEFAB502BD0A58F00B1A91C /* Frameworks */,
 				4F8353472BC678FC00961BFC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -301,6 +317,15 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		4FEFAB502BD0A58F00B1A91C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FEFAB512BD0A58F00B1A91C /* WidgetKit.framework */,
+				4FEFAB532BD0A58F00B1A91C /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -311,6 +336,7 @@
 				4F8353422BC678FC00961BFC /* Sources */,
 				4F8353432BC678FC00961BFC /* Frameworks */,
 				4F8353442BC678FC00961BFC /* Resources */,
+				4FEFAB642BD0A59100B1A91C /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);

@@ -28,7 +28,6 @@ struct ScheduleView: View {
                 .padding(.top,20)
             
             scheduleView
-            
             Button(action: {
                 let newSchedule = Schedule(name: "",creationDate: selectedDate.date, isComplete: false)
                 modelContext.insert(newSchedule)
@@ -57,29 +56,25 @@ struct ScheduleView: View {
             ForEach(schedules.filter {
                 Calendar.current.isDate($0.creationDate, inSameDayAs: selectedDate.date)
             }) { item in
-                ScheduleRowView(schedule: item)
-                    .swipeActions(content: {
-                        Button(role:.destructive, action: {modelContext.delete(item)}){
-                            Image(systemName: "trash")
-                        }
-                    })
+                VStack{
+                    ScheduleRowView(schedule: item)
+                        .swipeActions(content: {
+                            Button(role:.destructive, action: {modelContext.delete(item)}){
+                                Image(systemName: "trash")
+                            }
+                        })
+                }
             }
-//            .onDelete(perform: delete)
             .navigationBarBackButtonHidden(true)
         }
         .listStyle(.inset)
+//        .onTapGesture {
+//            let newSchedule = Schedule(name: "",creationDate: selectedDate.date, isComplete: false)
+//            modelContext.insert(newSchedule)
+//        }
     }
 }
 
-//extension ScheduleView{
-//    func delete(_ indexSets: IndexSet) {
-//        for index in indexSets {
-//            print(schedules[index].name)
-//            let schedule = schedules[index]
-//            modelContext.delete(schedule)
-//        }
-//    }
-//}
 
 #Preview {
     ScheduleView(selectedDate: SelectedDate.init())

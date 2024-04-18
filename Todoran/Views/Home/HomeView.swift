@@ -19,12 +19,13 @@ struct HomeView: View {
     @State private var isCheckmarkActive = false
     @State private var isFlagActive = false
     
+    
     var body: some View {
         VStack(alignment:.leading){
             headerView
             
             ScrollView{
-                VStack(alignment:.leading){
+                LazyVStack(alignment:.leading){
                     Divider()
                     CalendarView(selectedDate : selectedDate, month: Date())
                         .padding(.top,20)
@@ -74,6 +75,7 @@ struct HomeView: View {
                     ScheduleRowView(schedule: item)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.bottom,10)
+                        
 //                    Divider()
                         .overlay(BottomBorder().stroke(colorScheme == .dark ? Color.dividerColor : Color.gray01, lineWidth: 1))
                 }
