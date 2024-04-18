@@ -26,6 +26,7 @@ struct FlagView: View {
                     scheduleView
                 }
             }
+            .scrollDisabled(true)
         }
         .padding(16)
     }

@@ -73,6 +73,7 @@ struct ScheduleView: View {
 //            modelContext.insert(newSchedule)
 //        }
     }
+    
 }
 
 

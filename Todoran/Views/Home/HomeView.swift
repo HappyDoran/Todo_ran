@@ -33,7 +33,7 @@ struct HomeView: View {
                     Divider()
                     scheduleView
                 }
-            }
+            }.scrollDisabled(true)
         }
 //        .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
         .padding(16)
