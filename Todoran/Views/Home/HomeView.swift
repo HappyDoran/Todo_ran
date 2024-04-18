@@ -24,7 +24,7 @@ struct HomeView: View {
         VStack(alignment:.leading){
             headerView
             
-            ScrollView{
+            ScrollView(showsIndicators: false){
                 LazyVStack(alignment:.leading){
                     Divider()
                     CalendarView(selectedDate : selectedDate, month: Date())
@@ -33,7 +33,7 @@ struct HomeView: View {
                     Divider()
                     scheduleView
                 }
-            }.scrollDisabled(true)
+            }
         }
 //        .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
         .padding(16)

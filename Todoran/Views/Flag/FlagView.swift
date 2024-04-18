@@ -16,7 +16,7 @@ struct FlagView: View {
     var body: some View {
         VStack(alignment:.leading){
             headerView
-            ScrollView{
+            ScrollView(showsIndicators: false){
                 VStack(alignment:.leading){
                     Divider()
                     ChartView()
@@ -26,7 +26,6 @@ struct FlagView: View {
                     scheduleView
                 }
             }
-            .scrollDisabled(true)
         }
         .padding(16)
     }
