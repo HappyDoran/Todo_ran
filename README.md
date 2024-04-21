@@ -23,8 +23,7 @@
 - Xcode 15.3
 
 #### Manual
-1. Download and drop ```YourLibrary.swift``` in your project.  
-2. Congratulations!  
+![](menual.png)
 
 [swift-image]:https://img.shields.io/badge/swift-5.1-orange.svg
 [swift-url]: https://swift.org/
