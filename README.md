@@ -22,7 +22,7 @@
 - iOS 17.0+
 - Xcode 15.3
 
-#### Manual
+## Manual
 ![](menual.png)
 
 [swift-image]:https://img.shields.io/badge/swift-5.1-orange.svg
